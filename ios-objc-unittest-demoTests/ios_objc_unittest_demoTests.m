@@ -7,33 +7,57 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Sample.h"
 
 @interface ios_objc_unittest_demoTests : XCTestCase
-
 @end
 
 @implementation ios_objc_unittest_demoTests
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+/**
+ デフォルトコンストラクタ
+ */
+- (void)testSampleNotNil {
+
+    Sample* sample = [[Sample alloc]init];
+    XCTAssertNotNil(sample);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+/**
+ コンストラクタ
+ */
+- (void)testSampleInitaizerNotNil {
+
+    Sample* s = [[Sample alloc]initWithName:@"田中"];
+    XCTAssertNotNil(s);
+    XCTAssertEqualObjects([s getName], @"田中");
+}
+
+- (void)testIntroduce {
+
+    Sample* sample = [[Sample alloc]init];
+    NSString* introduce = [sample introduceWithName:@"山田"];
+    XCTAssertEqualObjects(introduce, @"山田です");
+}
+
+- (void) testList {
+    
+    Sample* sample = [[Sample alloc]init];
+
+    NSMutableArray* list = [sample list];
+    XCTAssertTrue([list containsObject:@"1"]);
+    XCTAssertTrue([list containsObject:@"10"]);
+
+    XCTAssertFalse([list containsObject:@"0"]);
+    XCTAssertFalse([list containsObject:@"11"]);
 }
 
 @end

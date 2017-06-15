@@ -14,6 +14,7 @@
 		7978B58B1EF2140400A8B350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7978B5891EF2140400A8B350 /* LaunchScreen.storyboard */; };
 		7978B58E1EF2140400A8B350 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7978B58D1EF2140400A8B350 /* main.m */; };
 		7978B5981EF2140400A8B350 /* ios_objc_unittest_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7978B5971EF2140400A8B350 /* ios_objc_unittest_demoTests.m */; };
+		7978B5A41EF21F6000A8B350 /* Sample.m in Sources */ = {isa = PBXBuildFile; fileRef = 7978B5A31EF21F6000A8B350 /* Sample.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7978B5931EF2140400A8B350 /* ios-objc-unittest-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-objc-unittest-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7978B5971EF2140400A8B350 /* ios_objc_unittest_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ios_objc_unittest_demoTests.m; sourceTree = "<group>"; };
 		7978B5991EF2140400A8B350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7978B5A21EF21F6000A8B350 /* Sample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sample.h; sourceTree = "<group>"; };
+		7978B5A31EF21F6000A8B350 /* Sample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sample.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				7978B5891EF2140400A8B350 /* LaunchScreen.storyboard */,
 				7978B58C1EF2140400A8B350 /* Info.plist */,
 				7978B58D1EF2140400A8B350 /* main.m */,
+				7978B5A21EF21F6000A8B350 /* Sample.h */,
+				7978B5A31EF21F6000A8B350 /* Sample.m */,
 			);
 			path = "ios-objc-unittest-demo";
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7978B5831EF2140400A8B350 /* ViewController.m in Sources */,
+				7978B5A41EF21F6000A8B350 /* Sample.m in Sources */,
 				7978B58E1EF2140400A8B350 /* main.m in Sources */,
 				7978B5801EF2140400A8B350 /* AppDelegate.m in Sources */,
 			);
@@ -351,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-objc-unittest-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-objc-unittest-demo";
@@ -363,6 +370,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-objc-unittest-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-objc-unittest-demo";
@@ -416,6 +424,7 @@
 				7978B59E1EF2140400A8B350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7978B59F1EF2140400A8B350 /* Build configuration list for PBXNativeTarget "ios-objc-unittest-demoTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				7978B5A11EF2140400A8B350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
